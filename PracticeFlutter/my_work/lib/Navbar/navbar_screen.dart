@@ -16,7 +16,7 @@ class _NavbarScreenState extends State<NavbarScreen> {
         color: Colors.black,
         child: Padding(
           padding: const EdgeInsets.only(
-            left: 16,
+            left: 17,
             top: 10,
             bottom: 10,
           ),
