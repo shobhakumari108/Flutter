@@ -64,27 +64,31 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   ],
                 ),
                 SizedBox(height: 20),
-                Row(
-                  children: [
-                    MyCard(),
-                    SizedBox(width: 15),
-                    MyCard(),
-                    SizedBox(width: 15),
-                    MyCard(),
-                  ],
-                ),
-                SizedBox(height: 20),
                 SizedBox(
-                  height: 140,
-                  child: ListView.builder(
+                  height: 290,
+                  child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 15.0),
-                        child: MyCard(),
-                      );
-                    },
+                    child: Column(
+                      children: [
+                        Wrap(
+                          direction: Axis.horizontal,
+                          runSpacing: 10,
+                          spacing: 10,
+                          children: [
+                            ...List.generate(6, (index) => MyCard()),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Wrap(
+                          direction: Axis.horizontal,
+                          runSpacing: 10,
+                          spacing: 10,
+                          children: [
+                            ...List.generate(6, (index) => MyCard()),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(height: 20),
@@ -97,27 +101,37 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   ),
                 ),
                 SizedBox(height: 20),
-                Row(
-                  children: [
-                    buildParticipant('People 1'),
-                    SizedBox(width: 15),
-                    buildParticipant('People 2'),
-                    SizedBox(width: 15),
-                    buildParticipant('People 3'),
-                  ],
-                ),
-                SizedBox(height: 20),
                 SizedBox(
-                  height: 140,
-                  child: ListView.builder(
+                  height: 290,
+                  child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
-                    itemCount: 5,
-                    itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.only(right: 15.0),
-                        child: buildParticipant('People 4'),
-                      );
-                    },
+                    child: Column(
+                      children: [
+                        Wrap(
+                          direction: Axis.horizontal,
+                          runSpacing: 10,
+                          spacing: 10,
+                          children: [
+                            ...List.generate(
+                              6,
+                              (index) => buildParticipant('People 1'),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Wrap(
+                          direction: Axis.horizontal,
+                          runSpacing: 10,
+                          spacing: 10,
+                          children: [
+                            ...List.generate(
+                              6, // Display 6 items in the second row
+                              (index) => buildParticipant('People 1'),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],

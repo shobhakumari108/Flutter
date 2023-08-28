@@ -8,9 +8,12 @@ import 'HiddenDrawer/Home.dart';
 import 'HiddenDrawer/Home_screen.dart';
 import 'Navbar/navbar_screen.dart';
 import 'Notification/notification_screen.dart';
+import 'Search/search_screen.dart';
 import 'Settings/help_screen.dart';
 import 'Settings/settings_screen.dart';
 import 'SidebarAnimation/SideMenu_screen.dart';
+import 'TechnicalSupport/technicalSupport_screen.dart';
+import 'TrendingTopics/trendingTopic_screen.dart';
 import 'Upcoming_events/Upcoming_events_screen.dart';
 
 void main() {
@@ -31,7 +34,10 @@ class MyApp extends StatelessWidget {
       // home: NotificationScreen(),
       // home:UpcomingEvents(),
       // home: SettingsScreen(),
-      home:ExploreScreen(),
+      // home:ExploreScreen(),
+      // home:SearchScreen(),
+      // home: TrendingTopicScreen(),
+      home: MyForm(),
     );
   }
 }

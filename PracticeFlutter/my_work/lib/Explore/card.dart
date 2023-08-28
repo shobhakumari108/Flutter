@@ -8,6 +8,7 @@ class MyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 90,
+      height: 135,
       decoration: BoxDecoration(
         color: Colors.grey[300],
         borderRadius: BorderRadius.circular(10),
@@ -51,7 +52,6 @@ class MyCard extends StatelessWidget {
                         Text(
                           "5",
                         ),
-                        
                         Icon(
                           Icons.diversity_1_outlined,
                           size: 14,
