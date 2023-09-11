@@ -7,7 +7,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Animated Sidebar Example')),
-      drawer: SideBar(), // Add the Drawer widget
+      drawer: SideBar(), 
       body: Center(
         child: Text('Main Content'),
       ),

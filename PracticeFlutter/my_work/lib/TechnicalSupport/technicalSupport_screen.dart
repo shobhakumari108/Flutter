@@ -1,6 +1,6 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'dart:io';
 
 class MyForm extends StatefulWidget {
   @override
@@ -13,15 +13,20 @@ class _MyFormState extends State<MyForm> {
   List<File> _images = [];
 
   Future<void> _getImage() async {
-    final picker = ImagePicker();
-    final pickedFile = await picker.getImage(source: ImageSource.gallery);
+    final List<XFile>? pickedImages = await ImagePicker().pickMultiImage();
 
-    if (pickedFile != null) {
-      setState(() {
-        if (_images.length < 5) {
-          _images.add(File(pickedFile.path));
-        }
-      });
+    if (pickedImages != null) {
+      if (_images.length + pickedImages.length > 5) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('You can select up to 5 images in total.'),
+          ),
+        );
+      } else {
+        setState(() {
+          _images.addAll(pickedImages.map((XFile image) => File(image.path)));
+        });
+      }
     }
   }
 
