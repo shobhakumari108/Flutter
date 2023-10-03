@@ -43,6 +43,7 @@ dependencies:
   http: ^1.1.0
   get:
   agora_uikit:
+  flutter_rating_bar: ^4.0.1
   
   
   

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:my_work/Agora/AHome_screen.dart';
+import 'package:my_work/Explore/card.dart';
+import 'package:my_work/Hunch/privacy_policy_screen.dart';
 import 'package:my_work/OneVideoCall/counselingScreen.dart';
 import 'package:my_work/OneVideoCall/counsellor_profile_screen.dart';
 import 'package:my_work/OneVideoCall/onevideocall_screen.dart';
+import 'package:my_work/ValidChoice/Product_screen/product_screen.dart';
 import 'package:my_work/ValidChoice/explore_screen.dart';
 import 'package:my_work/ZoomSDK/zoom_screen.dart';
 import 'API/home_page.dart';
@@ -33,8 +36,6 @@ void main() {
   runApp(MyApp());
 }
 
-
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -62,11 +63,14 @@ class MyApp extends StatelessWidget {
       // home:Phone(),
       // home:VideoCallScreen(),
       // home: CounselingPage(),
-      //  home: CounsellorProfile(),
+      // home: CounsellorProfile(),
       // home:Explore(),
       // home:HomeAPI(),
       // home: ZoomScreen(),
-      home:AHomeScreen(),
+      // home:AHomeScreen(),
+      // home:MyCard(),
+      // home:ProductScreen(),
+      home:PrivacyPolicyScreen(),
     );
   }
 }
