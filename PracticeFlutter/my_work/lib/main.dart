@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:my_work/Agora/AHome_screen.dart';
 import 'package:my_work/Explore/card.dart';
+import 'package:my_work/Hunch/block_user.dart';
+import 'package:my_work/Hunch/faq_contactus_screen.dart';
+import 'package:my_work/Hunch/privacyPolicy_screen.dart';
 import 'package:my_work/Hunch/privacy_policy_screen.dart';
+import 'package:my_work/Hunch/terms_of_service_screen.dart';
+import 'package:my_work/Hunch/whats_new_screen.dart';
 import 'package:my_work/OneVideoCall/counselingScreen.dart';
 import 'package:my_work/OneVideoCall/counsellor_profile_screen.dart';
 import 'package:my_work/OneVideoCall/onevideocall_screen.dart';
@@ -70,7 +75,13 @@ class MyApp extends StatelessWidget {
       // home:AHomeScreen(),
       // home:MyCard(),
       // home:ProductScreen(),
-      home:PrivacyPolicyScreen(),
+      // home:PrivacyPolicyScreen(),
+
+      // home: FaqContactusScreen(),
+      // home: WhatsNewScreen(),
+      // home:PrivacyAndPolicyScreen(),
+      // home:TermOfService(),
+      home: BlockScreen(),
     );
   }
 }

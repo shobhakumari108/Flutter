@@ -2647,7 +2647,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
                 "If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.",
                 style: TextStyle(
                   fontSize: 16.0,
-                  color: Colors.black, 
+                  color: Colors.black,  
                 ),
               ),
               SizedBox(
