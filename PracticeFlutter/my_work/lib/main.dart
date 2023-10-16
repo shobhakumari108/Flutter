@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:my_work/API_Com/Chome_screen.dart';
+import 'package:my_work/API_Photo/p_home.dart';
 import 'package:my_work/Agora/AHome_screen.dart';
 import 'package:my_work/Explore/card.dart';
 import 'package:my_work/Hunch/block_user.dart';
+import 'package:my_work/Hunch/community_guideLines.dart';
 import 'package:my_work/Hunch/faq_contactus_screen.dart';
 import 'package:my_work/Hunch/privacyPolicy_screen.dart';
 import 'package:my_work/Hunch/privacy_policy_screen.dart';
@@ -81,7 +84,10 @@ class MyApp extends StatelessWidget {
       // home: WhatsNewScreen(),
       // home:PrivacyAndPolicyScreen(),
       // home:TermOfService(),
-      home: BlockScreen(),
+      // home: BlockScreen(),
+      // home: PHomeScreen(),
+    //  home:CommunityGuidelinesScreen(),
+    home:CHome(),
     );
   }
 }

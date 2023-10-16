@@ -58,7 +58,8 @@ class _HomeAPIState extends State<HomeAPI> {
                 child: CircularProgressIndicator(),
               );
             }
-          }),
+          }
+          ),
     );
   }
 
@@ -67,8 +68,11 @@ class _HomeAPIState extends State<HomeAPI> {
         await http.get(Uri.parse('https://jsonplaceholder.typicode.com/users'));
     var data = jsonDecode(response.body.toString());
     if (response.statusCode == 200) {
-      for (Map<String, dynamic> index in data) {
-        samplePost.add(SamplePost.fromJson(index));
+      for (
+        Map<String, dynamic> index in data
+        ) {
+        samplePost.add(SamplePost.fromJson(index)
+        );
       }
       return samplePost;
     } else {
@@ -76,3 +80,7 @@ class _HomeAPIState extends State<HomeAPI> {
     }
   }
 }
+
+
+
+// https://jsonplaceholder.typicode.com/users
