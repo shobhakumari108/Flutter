@@ -44,6 +44,8 @@ dependencies:
   get:
   agora_uikit:
   flutter_rating_bar: ^4.0.1
+  fl_country_code_picker: ^0.0.4
+  flutter_otp_text_field: ^1.1.1
   
   
   

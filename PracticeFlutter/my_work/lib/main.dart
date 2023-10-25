@@ -17,6 +17,11 @@ import 'package:my_work/OneVideoCall/onevideocall_screen.dart';
 import 'package:my_work/ValidChoice/Product_screen/product_screen.dart';
 import 'package:my_work/ValidChoice/explore_screen.dart';
 import 'package:my_work/ZoomSDK/zoom_screen.dart';
+import 'package:my_work/valid_choice/Otp_screen.dart';
+import 'package:my_work/valid_choice/blur_screen.dart';
+import 'package:my_work/valid_choice/blur_screen2.dart';
+import 'package:my_work/valid_choice/login_screen1.dart';
+import 'package:my_work/valid_choice/signup_screen1.dart';
 import 'API/home_page.dart';
 import 'AnimatedSidebar/HomeScreen.dart';
 import 'Calls/videocall_screen.dart';
@@ -47,6 +52,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // ignore: prefer_const_constructors
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
 
@@ -87,7 +93,23 @@ class MyApp extends StatelessWidget {
       // home: BlockScreen(),
       // home: PHomeScreen(),
     //  home:CommunityGuidelinesScreen(),
-    home:CHome(),
+    // home:CHome(),
+    home: LoginScreen1(),
+    // home:BlurScreen2(),
+    // home:BlurScreen(),
+    // home:SignupScreen1(),
+    // home:OTPScreen(),
+    // home: OTPScreen(phoneNumber: '',),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
