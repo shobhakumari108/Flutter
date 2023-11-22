@@ -14,9 +14,23 @@ import 'package:my_work/Hunch/whats_new_screen.dart';
 import 'package:my_work/OneVideoCall/counselingScreen.dart';
 import 'package:my_work/OneVideoCall/counsellor_profile_screen.dart';
 import 'package:my_work/OneVideoCall/onevideocall_screen.dart';
+import 'package:my_work/Placement_Screen/company_logo.dart';
+import 'package:my_work/Placement_Screen/company_logo2.dart';
+import 'package:my_work/Placement_Screen/logo.dart';
+import 'package:my_work/Placement_Screen/upcomming_com.dart';
+import 'package:my_work/Practice/practice5.dart';
+import 'package:my_work/Practice/practice6.dart';
+import 'package:my_work/Practice/practice7.dart';
+import 'package:my_work/Practice/practice8.dart';
+import 'package:my_work/Practice/practice9.dart';
+import 'package:my_work/Practice/practice_1.dart';
+import 'package:my_work/Practice/practice_2.dart';
+import 'package:my_work/Practice/practice_3.dart';
+import 'package:my_work/Practice/practice_4.dart';
 import 'package:my_work/ValidChoice/Product_screen/product_screen.dart';
 import 'package:my_work/ValidChoice/explore_screen.dart';
 import 'package:my_work/ZoomSDK/zoom_screen.dart';
+import 'package:my_work/page3.dart';
 import 'package:my_work/valid_choice/Otp_screen.dart';
 import 'package:my_work/valid_choice/blur_screen.dart';
 import 'package:my_work/valid_choice/blur_screen2.dart';
@@ -92,24 +106,41 @@ class MyApp extends StatelessWidget {
       // home:TermOfService(),
       // home: BlockScreen(),
       // home: PHomeScreen(),
-    //  home:CommunityGuidelinesScreen(),
-    // home:CHome(),
-    home: LoginScreen1(),
-    // home:BlurScreen2(),
-    // home:BlurScreen(),
-    // home:SignupScreen1(),
-    // home:OTPScreen(),
-    // home: OTPScreen(phoneNumber: '',),
+      //  home:CommunityGuidelinesScreen(),
+      // home:CHome(),
+      // home: LoginScreen1(),
+      // home:BlurScreen2(),
+      // home:BlurScreen(),
+      // home:SignupScreen1(),
+      // home:OTPScreen(),
+      // home: OTPScreen(phoneNumber: '',),
+// *******************************************************
+      // home: HomePage(),
+      // home: CustomPage(),
+      // home: CustomAnimationPage(),
+      // home:SlideAnimationPage(),
+      // home: RotatingAnimationPage(),
+      // home:App(),
+      // home: App2(),
+      //  home:HomePage1(),
+      // home:HomePage2(),
+      // home: HomePage3(),
+      // home:HomePage4(),
+      
+      // home:HomePage5(),
+      // home:HomePage6(),
+      // home:HomePage7(),
+      // home:HomePage8(),
+
+      // home: HomePage9(),
+// ??*********************************************************
+      //  home:Page3(),
+      // home: RoundedLogo(),
+      // home: AnotherRoundedLogo(),
+      // home: LogoScreen(),
+      home:UpcomingCompany(),
+
+    
     );
   }
 }
-
-
-
-
-
-
-
-
-
-

@@ -69,7 +69,7 @@ class _OTPScreenState extends State<OTPScreen> {
                       } else if (val is Widget) {
                         onBackspacePress();
                       } else if (amount.length >= 6) {
-                        // You can add your own logic here
+                        
                       } else {
                         onKeyTap(val);
                       }
@@ -135,6 +135,7 @@ class _OTPScreenState extends State<OTPScreen> {
                                 ),
                               ),
                             )
+
                             .toList(),
                       ),
               ),
@@ -149,7 +150,7 @@ class _OTPScreenState extends State<OTPScreen> {
                     setState(() {
                       isLoading = true;
                     });
-                    // Add your resend OTP logic here
+                    
                   },
                   child: Text(
                     "Resend OTP",
@@ -157,7 +158,8 @@ class _OTPScreenState extends State<OTPScreen> {
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: Color.fromRGBO(
-                          18, 69, 49, 1.0), // Adjust color as needed
+                          18, 69, 49, 1.0), 
+                          // Adjust color as needed
                     ),
                   ),
                 )
